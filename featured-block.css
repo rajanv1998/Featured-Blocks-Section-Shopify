@@ -1,0 +1,48 @@
+/*********** featured promotion ***************/
+.feature-promotion {
+    padding: 20px;
+}
+.feature-promotion-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.feature_box {
+    overflow: hidden;
+}
+.feature-promotion-row img {
+    max-width: 100%;
+    width: 100%;
+    display: block;
+    filter: brightness(0.9);
+    transition: 0.5s ease-in-out;
+}
+.feature-promotion-row .inner_box:hover img {
+    filter: brightness(1);
+    transform: scale(1.1);
+}
+.feature-promotion-row .col-md-4 {
+    flex: max(300px, 100%/3 - 20px);
+}
+.feature-promotion-row .inner_box {
+    position: relative;
+  cursor: pointer;
+}
+.feature-promotion-row .inner_box .feature_content {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+.feature-promotion-row .inner_box .feature_content h2 {
+    text-transform: capitalize;
+    font-size: 33px;
+    margin-bottom: 16px;
+}
+.feature-promotion-row .inner_box .feature_content a {
+    padding: 16px 24px;
+    background: black;
+    color: #fff;
+    display: inline-block;
+    line-height: 0;
+    font-size: 14px;
+}
